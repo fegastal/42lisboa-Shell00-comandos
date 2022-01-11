@@ -1,0 +1,162 @@
+Last login: Tue Jan 11 09:52:58 on ttys000
+fgastal-@c1r1s5 ~ % pwd
+/Users/fgastal-
+fgastal-@c1r1s5 ~ % cd desktp
+cd: no such file or directory: desktp
+fgastal-@c1r1s5 ~ % cd desktop
+fgastal-@c1r1s5 desktop % mkdir ex02
+fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % pwd
+/Users/fgastal-/desktop/ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % ls -l
+total 0
+drwxr-xr-x  3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
+drwxr-xr-x  5 fgastal-  2022_lisboa  170 Jan 10 17:35 ex01
+drwxr-xr-x  3 fgastal-  2022_lisboa  102 Jan 10 17:14 testShell00
+fgastal-@c1r1s5 ExerciciosPiscine % mkdir ex02
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex02
+fgastal-@c1r1s5 ex02 % mkdir test0 test2
+fgastal-@c1r1s5 ex02 % touch test1 test3 test4
+fgastal-@c1r1s5 ex02 % ls -l
+total 0
+drwxr-xr-x  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test0
+-rw-r--r--  1 fgastal-  2022_lisboa   0 Jan 11 10:13 test1
+drwxr-xr-x  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test2
+-rw-r--r--  1 fgastal-  2022_lisboa   0 Jan 11 10:13 test3
+-rw-r--r--  1 fgastal-  2022_lisboa   0 Jan 11 10:13 test4
+fgastal-@c1r1s5 ex02 % echo -n 1234>test1
+fgastal-@c1r1s5 ex02 % echo 1>test3
+fgastal-@c1r1s5 ex02 % echo -n 12>test4
+fgastal-@c1r1s5 ex02 % ls -l
+total 24
+drwxr-xr-x  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test0
+-rw-r--r--  1 fgastal-  2022_lisboa   4 Jan 11 10:13 test1
+drwxr-xr-x  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test2
+-rw-r--r--  1 fgastal-  2022_lisboa   1 Jan 11 10:14 test3
+-rw-r--r--  1 fgastal-  2022_lisboa   2 Jan 11 10:14 test4
+fgastal-@c1r1s5 ex02 % chmod 715 test0
+fgastal-@c1r1s5 ex02 % chmod 714 test1
+fgastal-@c1r1s5 ex02 % chmod 504 test2
+fgastal-@c1r1s5 ex02 % chmod 404 test3
+fgastal-@c1r1s5 ex02 % chmod 641 test4
+fgastal-@c1r1s5 ex02 % ls -l
+total 24
+drwx--xr-x  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jan 11 10:13 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test2
+-r-----r--  1 fgastal-  2022_lisboa   1 Jan 11 10:14 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jan 11 10:14 test4
+fgastal-@c1r1s5 ex02 % touch -t 06012047 test0
+fgastal-@c1r1s5 ex02 % ls -l
+total 24
+drwx--xr-x  2 fgastal-  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jan 11 10:13 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test2
+-r-----r--  1 fgastal-  2022_lisboa   1 Jan 11 10:14 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jan 11 10:14 test4
+fgastal-@c1r1s5 ex02 % touch t- 202206012047 test0
+fgastal-@c1r1s5 ex02 % ls -l
+total 24
+-rw-r--r--  1 fgastal-  2022_lisboa   0 Jan 11 10:18 202206012047
+-rw-r--r--  1 fgastal-  2022_lisboa   0 Jan 11 10:18 t-
+drwx--xr-x  2 fgastal-  2022_lisboa  68 Jan 11 10:18 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jan 11 10:13 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test2
+-r-----r--  1 fgastal-  2022_lisboa   1 Jan 11 10:14 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jan 11 10:14 test4
+fgastal-@c1r1s5 ex02 % ls -l
+total 24
+drwx--xr-x  2 fgastal-  2022_lisboa  68 Jan 11 10:18 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jan 11 10:13 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test2
+-r-----r--  1 fgastal-  2022_lisboa   1 Jan 11 10:14 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jan 11 10:14 test4
+fgastal-@c1r1s5 ex02 % chmod 715 test0
+fgastal-@c1r1s5 ex02 % chmod 714 test1
+fgastal-@c1r1s5 ex02 % chmod 504 test2
+fgastal-@c1r1s5 ex02 % chmod 404 test3
+fgastal-@c1r1s5 ex02 % chmod 641 test4
+fgastal-@c1r1s5 ex02 % ls -l
+total 24
+drwx--xr-x  2 fgastal-  2022_lisboa  68 Jan 11 10:18 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jan 11 10:13 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jan 11 10:12 test2
+-r-----r--  1 fgastal-  2022_lisboa   1 Jan 11 10:14 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jan 11 10:14 test4
+fgastal-@c1r1s5 ex02 % touch -t 06012047 test0
+fgastal-@c1r1s5 ex02 % touch -t 06012146 test1
+fgastal-@c1r1s5 ex02 % touch -t 06012245 test2
+fgastal-@c1r1s5 ex02 % touch -t 06012344 test3
+fgastal-@c1r1s5 ex02 % touch -t 06012343 test4
+fgastal-@c1r1s5 ex02 % ls -l
+total 24
+drwx--xr-x  2 fgastal-  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  1 fgastal-  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jun  1  2022 test4
+fgastal-@c1r1s5 ex02 % ln test3 test5
+fgastal-@c1r1s5 ex02 % ln -s test0 test6
+fgastal-@c1r1s5 ex02 % ls -l
+total 40
+drwx--xr-x  2 fgastal-  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test5
+lrwxr-xr-x  1 fgastal-  2022_lisboa   5 Jan 11 11:08 test6 -> test0
+fgastal-@c1r1s5 ex02 % ls -l
+total 40
+drwx--xr-x  2 fgastal-  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test5
+lrwxr-xr-x  1 fgastal-  2022_lisboa   5 Jan 11 11:08 test6 -> test0
+fgastal-@c1r1s5 ex02 % chmod 755 test6
+fgastal-@c1r1s5 ex02 % ls -l
+total 40
+drwxr-xr-x  2 fgastal-  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test5
+lrwxr-xr-x  1 fgastal-  2022_lisboa   5 Jan 11 11:08 test6 -> test0
+fgastal-@c1r1s5 ex02 % touch -t 06012047 test6
+fgastal-@c1r1s5 ex02 % ls -l
+total 40
+drwxr-xr-x  2 fgastal-  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test5
+lrwxr-xr-x  1 fgastal-  2022_lisboa   5 Jan 11 11:08 test6 -> test0
+fgastal-@c1r1s5 ex02 % man touch
+t%                                                                              fgastal-@c1r1s5 ex02 %
+fgastal-@c1r1s5 ex02 % touch -h 06012047 test6
+fgastal-@c1r1s5 ex02 % ls -l
+total 40
+drwxr-xr-x  2 fgastal-  2022_lisboa  68 Jun  1  2022 test0
+-rwx--xr--  1 fgastal-  2022_lisboa   4 Jun  1  2022 test1
+dr-x---r--  2 fgastal-  2022_lisboa  68 Jun  1  2022 test2
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test3
+-rw-r----x  1 fgastal-  2022_lisboa   2 Jun  1  2022 test4
+-r-----r--  2 fgastal-  2022_lisboa   1 Jun  1  2022 test5
+lrwxr-xr-x  1 fgastal-  2022_lisboa   5 Jun  1  2022 test6 -> test0
+fgastal-@c1r1s5 ex02 % tar -cf exo2.tar
+tar: no files or directories specified
+fgastal-@c1r1s5 ex02 % tar -cf exo2.tar *
+fgastal-@c1r1s5 ex02 % ls -l
+total 56
+-rw-r--r--  1 fgastal-  2022_lisboa  6144 Jan 11 11:12 exo2.tar
+drwxr-xr-x  2 fgastal-  2022_lisboa    68 Jun  1  2022 test0
+-rwx--xr--  1 fgastal-  2022_lisboa     4 Jun  1  2022 test1
+dr-x---r--  2 fgastal-  2022_lisboa    68 Jun  1  2022 test2
+-r-----r--  2 fgastal-  2022_lisboa     1 Jun  1  2022 test3
+-rw-r----x  1 fgastal-  2022_lisboa     2 Jun  1  2022 test4
+-r-----r--  2 fgastal-  2022_lisboa     1 Jun  1  2022 test5
+lrwxr-xr-x  1 fgastal-  2022_lisboa     5 Jun  1  2022 test6 -> test0
