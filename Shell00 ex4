@@ -76,3 +76,25 @@ drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 12:20 ex05
 fgastal-@c1r1s5 ExerciciosPiscine % bash ex04/midlS
 ex00/, ex01/, ex02/, ex03/, ex04/, ex05/
 fgastal-@c1r1s5 ExerciciosPiscine %
+
+_
+Last login: Tue Jan 11 14:55:10 on ttys001
+fgastal-@c1r1s5 ~ % pwd
+/Users/fgastal-
+fgastal-@c1r1s5 ~ % cd desktop
+fgastal-@c1r1s5 desktop % cd ex04
+cd: no such file or directory: ex04
+fgastal-@c1r1s5 desktop % cd ExercicosPiscine
+cd: no such file or directory: ExercicosPiscine
+fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % pwd
+/Users/fgastal-/desktop/ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex04
+fgastal-@c1r1s5 ex04 % pwd
+/Users/fgastal-/desktop/ExerciciosPiscine/ex04
+fgastal-@c1r1s5 ex04 % echo "ls -mtp" > midLS
+fgastal-@c1r1s5 ex04 % ls -l
+total 8
+-rw-r--r--  1 fgastal-  2022_lisboa  8 Jan 11 16:03 midLS
+fgastal-@c1r1s5 ex04 %
+
