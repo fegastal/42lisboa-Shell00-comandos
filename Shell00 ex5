@@ -1,0 +1,48 @@
+Last login: Tue Jan 11 12:01:15 on ttys000
+fgastal-@c1r1s5 ~ % pwd
+/Users/fgastal-
+fgastal-@c1r1s5 ~ % cd desktop
+fgastal-@c1r1s5 desktop % pwd
+/Users/fgastal-/desktop
+fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % cd ExerciciosPiscine
+cd: no such file or directory: ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % mkdir ex05
+fgastal-@c1r1s5 ExerciciosPiscine % ls -l
+total 0
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
+drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 11:36 ex01
+drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 11:49 ex03
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:02 ex04
+drwxr-xr-x   2 fgastal-  2022_lisboa   68 Jan 11 12:10 ex05
+fgastal-@c1r1s5 ExerciciosPiscine % echo "git log --pretty=format: '%H' -5" > git_commit.sh
+fgastal-@c1r1s5 ExerciciosPiscine % clear
+fgastal-@c1r1s5 ExerciciosPiscine % ls -l
+total 8
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
+drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 11:36 ex01
+drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 11:49 ex03
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:02 ex04
+drwxr-xr-x   2 fgastal-  2022_lisboa   68 Jan 11 12:10 ex05
+-rw-r--r--   1 fgastal-  2022_lisboa   33 Jan 11 12:11 git_commit.sh
+fgastal-@c1r1s5 ExerciciosPiscine % pwd
+/Users/fgastal-/desktop/ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % ls -l
+total 0
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
+drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 11:36 ex01
+drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 11:49 ex03
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:02 ex04
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:13 ex05
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex05
+fgastal-@c1r1s5 ex05 % ls -l
+total 8
+-rw-r--r--  1 fgastal-  2022_lisboa  33 Jan 11 12:11 git_commit.sh
+fgastal-@c1r1s5 ex05 % cat git_commit.sh
+git log --pretty=format: '%H' -5
+fgastal-@c1r1s5 ex05 % rm git_commit.sh
+fgastal-@c1r1s5 ex05 % nano git_commit.sh
+fgastal-@c1r1s5 ex05 %
