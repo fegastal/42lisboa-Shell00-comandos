@@ -1,0 +1,79 @@
+Last login: Tue Jan 11 15:14:10 on ttys002
+fgastal-@c1r1s5 ~ % cd desktop
+fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % pwd
+/Users/fgastal-/desktop/ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % ls -l
+total 0
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
+drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 12:58 ex01
+drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:55 ex03
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 16:03 ex04
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 12:20 ex05
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex5
+cd: no such file or directory: ex5
+fgastal-@c1r1s5 ExerciciosPiscine % cd05
+
+zsh: command not found: cd05
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex05
+fgastal-@c1r1s5 ex05 % ls -l
+fgastal-@c1r1s5 ex05 % pwd
+/Users/fgastal-/desktop/ExerciciosPiscine/ex05
+fgastal-@c1r1s5 ex05 % git init
+Initialized empty Git repository in /Users/fgastal-/Desktop/ExerciciosPiscine/ex05/.git/
+fgastal-@c1r1s5 ex05 % touch git_commit.sh
+fgastal-@c1r1s5 ex05 % git add git_commit.sh
+fgastal-@c1r1s5 ex05 % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   git_commit.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+fgastal-@c1r1s5 ex05 % git commit git_commit.sh
+[master (root-commit) 594a2e3] ola tudo bem
+ Committer: Fernanda Gastal figueiredo <fgastal-@c1r1s5.42lisboa.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git_commit.sh
+fgastal-@c1r1s5 ex05 % git log
+commit 594a2e3951cec2548e306d0dd0be33c0389e238c (HEAD -> master)
+Author: Fernanda Gastal figueiredo <fgastal-@c1r1s5.42lisboa.com>
+Date:   Tue Jan 11 16:09:58 2022 +0000
+
+    ola tudo bem
+fgastal-@c1r1s5 ex05 % echo git log -5 > git_commit.sh
+fgastal-@c1r1s5 ex05 % cat git_commit.sh
+git log -5
+fgastal-@c1r1s5 ex05 % ls -l
+total 8
+-rw-r--r--@ 1 fgastal-  2022_lisboa  11 Jan 11 16:10 git_commit.sh
+fgastal-@c1r1s5 ex05 % cd git_commit.sh
+cd: not a directory: git_commit.sh
+fgastal-@c1r1s5 ex05 % cat git_commit.sh
+git log -5
+fgastal-@c1r1s5 ex05 % git log
+commit 594a2e3951cec2548e306d0dd0be33c0389e238c (HEAD -> master)
+Author: Fernanda Gastal figueiredo <fgastal-@c1r1s5.42lisboa.com>
+Date:   Tue Jan 11 16:09:58 2022 +0000
+
+    ola tudo bem
+fgastal-@c1r1s5 ex05 %
