@@ -1,0 +1,121 @@
+Last login: Tue Jan 11 12:27:19 on ttys000
+fgastal-@c1r1s5 ~ % ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/fgastal-/.ssh/id_rsa):
+/Users/fgastal-/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/fgastal-/.ssh/id_rsa.
+Your public key has been saved in /Users/fgastal-/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:4yeF0xtUB2ElYgfLyOJ8mTn0SSRcsLnHBNkJWflo6as fgastal-@c1r1s5.42lisboa.com
+The key's randomart image is:
++---[RSA 3072]----+
+|       .=OB+B+o  |
+|       .+X+* o   |
+|      . * *+     |
+|     o o &+..    |
+|      o SoO      |
+|       o *.o     |
+|        o o.     |
+|         o.      |
+|        E.       |
++----[SHA256]-----+
+fgastal-@c1r1s5 ~ % cat ~/ .ssh/id_rsa
+cat: /Users/fgastal-/: Is a directory
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+fgastal-@c1r1s5 ~ % cat ~/ .ssh/id_rsa.pub
+cat: /Users/fgastal-/: Is a directory
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDKvGIJSQyjzOLW5rO4eltrvciB8iqXS0Hm7etlgkq2y3po/mO5L+qklRAdnNTqXIFCKOJ+Jko5CoTXpXFafcmQtQlZ+G7Wc8TlFhtm/EoRUBMEWrFA1pmkG5yncs9WfDTf4kaOXQSXhA2gfWJKWpfdx7LNlII/viyUBPK0bU10QdmqJ9WN6DwUrsTap50RNRfwl6fkpeIry+wEIEy1bNh6uDEyw4LWHZfAJdn0DiKcgCM4+1mqLq1x6lTfegE6J958wMErINy0zjmEWolSnRFJJbmJyyLmae/gbKQjzN3ERGCPVsAK9uStRu0pi1TwwVUHxFuntdnr+r18BZwplTG/4NKacw4irzwOgnriUZWA1SOl+jM8PHuT+hR8k1Dkc5XLaBEcArdSEvRIoy/Q152fZBU3sBXgUi7l/f1kGbj4/7MTtLsoHf82o006QJ1sgFY+9Wf9IAEad8ooJcJ2namnxVVKV+VaDmxnSeTv5UR5M0vLupcGanPvFaqpTufzWNE= fgastal-@c1r1s5.42lisboa.com
+fgastal-@c1r1s5 ~ % cd .ssh
+fgastal-@c1r1s5 .ssh % ls -l
+total 16
+-rw-------  1 fgastal-  2022_lisboa  2622 Jan 11 12:43 id_rsa
+-rw-r--r--  1 fgastal-  2022_lisboa   582 Jan 11 12:43 id_rsa.pub
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub Users/fgastal-/Desktop/ExerciciosPiscine/ex03/id_rsa_pub.pub
+cp: Users/fgastal-/Desktop/ExerciciosPiscine/ex03/id_rsa_pub.pub: No such file or directory
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub Users/fgastal-/Desktop/ExerciciosPiscine/ex03
+cp: Users/fgastal-/Desktop/ExerciciosPiscine/ex03: No such file or directory
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub Users/fgastal-/Desktop/ExerciciosPiscine/ex03/
+cp: directory Users/fgastal-/Desktop/ExerciciosPiscine/ex03 does not exist
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub Users/fgastal-/Desktop/ExerciciosPiscine/ex03/
+cp: directory Users/fgastal-/Desktop/ExerciciosPiscine/ex03 does not exist
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub Users/fgastal-/Desktop/ExerciciosPiscine/ex03
+cp: Users/fgastal-/Desktop/ExerciciosPiscine/ex03: No such file or directory
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub /Users/fgastal-/Desktop/ExerciciosPiscine/ex03
+fgastal-@c1r1s5 .ssh % cd ex03
+cd: no such file or directory: ex03
+fgastal-@c1r1s5 .ssh % cd
+fgastal-@c1r1s5 ~ % cd desktop
+fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex03
+fgastal-@c1r1s5 ex03 % ls -l
+total 8
+-rw-r--r--  1 fgastal-  2022_lisboa  582 Jan 11 12:53 id_rsa.pub
+fgastal-@c1r1s5 ex03 % mv id_rsa.pub id_rsa_pub.pub
+fgastal-@c1r1s5 ex03 % ls -l
+total 8
+-rw-r--r--  1 fgastal-  2022_lisboa  582 Jan 11 12:53 id_rsa_pub.pub
+fgastal-@c1r1s5 ex03 % >....
+03/
+cp: directory Users/fgastal-/Desktop/ExerciciosPiscine/ex03 does not exist
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub Users/fgastal-/Desktop/ExerciciosPiscine/ex03/
+cp: directory Users/fgastal-/Desktop/ExerciciosPiscine/ex03 does not exist
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub Users/fgastal-/Desktop/ExerciciosPiscine/ex03
+cp: Users/fgastal-/Desktop/ExerciciosPiscine/ex03: No such file or directory
+fgastal-@c1r1s5 .ssh % cp id_rsa.pub /Users/fgastal-/Desktop/ExerciciosPiscine/ex03
+fgastal-@c1r1s5 .ssh % cd ex03
+cd: no such file or directory: ex03
+fgastal-@c1r1s5 .ssh % cd
+fgastal-@c1r1s5 ~ % cd desktop
+fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex03
+fgastal-@c1r1s5 ex03 % ls -l
+total 8
+-rw-r--r--  1 fgastal-  2022_lisboa  582 Jan 11 12:53 id_rsa.pub
+fgastal-@c1r1s5 ex03 % mv id_rsa.pub id_rsa_pub.pub
+fgastal-@c1r1s5 ex03 % ls -l
+total 8
+-rw-r--r--  1 fgastal-  2022_lisboa  582 Jan 11 12:53 id_rsa_pub.pub
+fgastal-@c1r1s5 ex03 %
