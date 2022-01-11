@@ -1,42 +1,78 @@
-Last login: Tue Jan 11 11:53:44 on ttys001
+Last login: Tue Jan 11 13:56:39 on ttys002
 fgastal-@c1r1s5 ~ % pwd
+
 /Users/fgastal-
+1
 fgastal-@c1r1s5 ~ % cd desktop
+kskdk
+fgastal-@c1r1s5 desktop % pwd
+/Users/fgastal-/desktop
 fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % pwd
+/Users/fgastal-/desktop/ExerciciosPiscine
 fgastal-@c1r1s5 ExerciciosPiscine % cd ex04
+fgastal-@c1r1s5 ex04 % pd
+zsh: command not found: pd
 fgastal-@c1r1s5 ex04 % pwd
 /Users/fgastal-/desktop/ExerciciosPiscine/ex04
+fgastal-@c1r1s5 ex04 % ll
+zsh: command not found: ll
+fgastal-@c1r1s5 ex04 % ls -l
+fgastal-@c1r1s5 ex04 % cd ..
+fgastal-@c1r1s5 ExerciciosPiscine % ls -l
+total 0
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
+A;:
+drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 12:58 ex01
+drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:55 ex03
+drwxr-xr-x   2 fgastal-  2022_lisboa   68 Jan 11 14:52 ex04
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 12:20 ex05
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex04
+fgastal-@c1r1s5 ex04 % vim -u NONE midLS
+fgastal-@c1r1s5 ex04 % cd ..
+fgastal-@c1r1s5 ExerciciosPiscine % ls -l
+total 0
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
+drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 12:58 ex01
+drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:55 ex03
+drwxr-xr-x   2 fgastal-  2022_lisboa   68 Jan 11 15:02 ex04
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 12:20 ex05
+fgastal-@c1r1s5 ExerciciosPiscine % ls -Um
+ex00, ex01, ex02, ex03, ex04, ex05
+fgastal-@c1r1s5 ExerciciosPiscine % ls -pUm
+ex00/, ex01/, ex02/, ex03/, ex04/, ex05/
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex04/
+fgastal-@c1r1s5 ex04 % ls -
+ls: -: No such file or directory
+fgastal-@c1r1s5 ex04 % vim -u NONE midLS
+fgastal-@c1r1s5 ex04 % vim -u NONE midLS
+fgastal-@c1r1s5 ex04 % vim midLS
+fgastal-@c1r1s5 ex04 % vim -u NONE midLS
+fgastal-@c1r1s5 ex04 % echo "ls -pUm" > midLS
 fgastal-@c1r1s5 ex04 % ls -l
 total 8
--rw-r--r--  1 fgastal-  2022_lisboa  8 Jan 11 11:59 midLS
+-rw-r--r--  1 fgastal-  2022_lisboa  8 Jan 11 15:11 midLS
+fgastal-@c1r1s5 ex04 % cat midLs
+ls -pUm
+fgastal-@c1r1s5 ex04 % rm midLS
+fgastal-@c1r1s5 ex04 % nano midLS
 fgastal-@c1r1s5 ex04 % cat midLS
 ls -pUm
 fgastal-@c1r1s5 ex04 % bash midLS
 midLS
 fgastal-@c1r1s5 ex04 % ..
 zsh: permission denied: ..
-fgastal-@c1r1s5 ex04 % ls -l
-total 8
--rw-r--r--  1 fgastal-  2022_lisboa  8 Jan 11 11:59 midLS
 fgastal-@c1r1s5 ex04 % cd ..
 fgastal-@c1r1s5 ExerciciosPiscine % ls -l
 total 0
 drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
-drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 11:36 ex01
+drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 12:58 ex01
 drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
-drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 11:49 ex03
-drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:02 ex04
-drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 17:14 testShell00
-fgastal-@c1r1s5 ExerciciosPiscine % bash ex04/midLS
-ex00/, ex01/, ex02/, ex03/, ex04/, testShell00/
-fgastal-@c1r1s5 ExerciciosPiscine % ll
-zsh: command not found: ll
-fgastal-@c1r1s5 ExerciciosPiscine % ls -l
-total 0
-drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
-drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 11:36 ex01
-drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
-drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 11:49 ex03
-drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:02 ex04
-drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 17:14 testShell00
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:55 ex03
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 15:11 ex04
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 11 12:20 ex05
+fgastal-@c1r1s5 ExerciciosPiscine % bash ex04/midlS
+ex00/, ex01/, ex02/, ex03/, ex04/, ex05/
 fgastal-@c1r1s5 ExerciciosPiscine %
