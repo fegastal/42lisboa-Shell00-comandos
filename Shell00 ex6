@@ -1,358 +1,68 @@
-Last login: Wed Jan 12 09:50:59 on console
-fgastal-@c1r1s5 ~ % git status
-warning: could not open directory '.DocumentRevisions-V100/': Permission denied
-warning: could not open directory '.fseventsd/': Permission denied
-warning: could not open directory '.TemporaryItems/': Permission denied
-On branch master
+1# criar a pasta
 
-No commits yet
+2# git init
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	.CFUserTextEncoding
-	.DS_Store
-	.Trash/
-	.gitconfig
-	.ssh/
-	.viminfo
-	.zsh_history
-	Applications/
-	Desktop/
-	Downloads/
-	Library/
-	Movies/
-	goinfre
-	test.txtt
-	toto/
-	txt2.txt
+3# touch git_ignore.sh
 
-nothing added to commit but untracked files present (use "git add" to track)
-fgastal-@c1r1s5 ~ % git status
-warning: could not open directory '.DocumentRevisions-V100/': Permission denied
-warning: could not open directory '.fseventsd/': Permission denied
-warning: could not open directory '.TemporaryItems/': Permission denied
-On branch master
+4# vim git_ignore.sh
 
-No commits yet
+5#
+#! bin/bash
+git ls-files --exclude-standard -i -o
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	.CFUserTextEncoding
-	.DS_Store
-	.Trash/
-	.gitconfig
-	.ssh/
-	.viminfo
-	.zsh_history
-	Applications/
-	Desktop/
-	Downloads/
-	Library/
-	Movies/
-	goinfre
-	test.txtt
-	toto/
-	txt2.txt
+6# sai do vim
 
-nothing added to commit but untracked files present (use "git add" to track)
-fgastal-@c1r1s5 ~ % ls -l
-total 8
-drwx------@  3 fgastal-  2022_lisboa   102 Jan 10 11:03 Applications
-drwxr-xr-x   8 fgastal-  2022_lisboa   272 Jan 11 18:43 Desktop
-drwxr-xr-x   2 fgastal-  2022_lisboa    68 Jan 10 10:56 Documents
-drwx------   3 fgastal-  2022_lisboa   102 Jan 10 11:15 Downloads
-drwxr-xr-x@ 40 fgastal-  2022_lisboa  1360 Jan 10 11:06 Library
-drwxr-xr-x   3 fgastal-  2022_lisboa   102 Jan 11 09:33 Movies
-drwxr-xr-x   2 fgastal-  2022_lisboa    68 Jan 10 16:24 batman.txt
-lrwxr-xr-x   1 fgastal-  2022_lisboa    18 Jan 10 10:56 goinfre -> /goinfre/fgastal-/
-drwxr-xr-x   2 fgastal-  2022_lisboa    68 Jan 10 13:12 shell
--rw-r--r--   1 fgastal-  2022_lisboa     0 Jul 15  2013 test.txtt
-drwxr-xr-x   4 fgastal-  2022_lisboa   136 Jan 10 16:31 toto
--rw-r--r--   1 fgastal-  2022_lisboa     0 Jan 10 14:08 txt2.txt
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % ls -l
-total 16
-drwxr-xr-x  10 fgastal-  2022_lisboa  340 Jan 11 16:48 ExerciciosPiscine
--rw-r--r--   1 fgastal-  2022_lisboa  324 Jan 10 10:56 PLAY_ME.webloc
--rw-r--r--   1 fgastal-  2022_lisboa    5 Jan 11 18:43 pouet
-drwxr-xr-x   2 fgastal-  2022_lisboa   68 Jan 10 16:35 untitled folder
-fgastal-@c1r1s5 desktop % cd C01/
-cd: no such file or directory: C01/
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % ls -l
-total 0
-drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
-drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 12:58 ex01
-drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
-drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:55 ex03
-drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 16:03 ex04
-drwxr-xr-x   5 fgastal-  2022_lisboa  170 Jan 11 16:09 ex05
-drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 18:17 ex06
-fgastal-@c1r1s5 ExerciciosPiscine % cd ex06
+7# touch .DS_Store
+
+8# touch mywork.c~
+
+9# touch .gitignore
+
+10# vim .gitignore
+
+11# escrever dentro dele:
+.DS_Store$
+mywork.c~$
+
+11# bash git_ignored.sh | cat -e
+
+ele exibira os arquivos ignorados
+
+
+_
+
+
 fgastal-@c1r1s5 ex06 % ls -l
-total 0
--rw-r--r--  1 fgastal-  2022_lisboa  0 Jan 11 18:17 pouet
+total 8
+-rw-r--r--@ 1 fgastal-  2022_lisboa  50 Jan 12 10:58 git_ignored.sh
+fgastal-@c1r1s5 ex06 % vim git_ignored.sh
+fgastal-@c1r1s5 ex06 % bash git_ignore.sh | cat -e
+.DS_Store
+bash: git_ignore.sh: No such file or directory
 fgastal-@c1r1s5 ex06 % cd
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % cd ex01
-fgastal-@c1r1s5 ex01 % ls -la
-total 56
-drwxr-xr-x   6 fgastal-  2022_lisboa    204 Jan 11 12:58 .
-drwxr-xr-x  10 fgastal-  2022_lisboa    340 Jan 11 16:48 ..
--rw-r--r--@  1 fgastal-  2022_lisboa   6148 Jan 11 12:58 .DS_Store
--rw-------   1 fgastal-  2022_lisboa  12288 Jan 11 11:30 .testShell00.swp
--r--r-xr-x   1 fgastal-  2022_lisboa     40 Jun  1  2022 testShell00
--rw-r--r--   1 fgastal-  2022_lisboa   2048 Jan 11 11:36 testShell00.tar
-fgastal-@c1r1s5 ex01 % ls -l
-total 16
--r--r-xr-x  1 fgastal-  2022_lisboa    40 Jun  1  2022 testShell00
--rw-r--r--  1 fgastal-  2022_lisboa  2048 Jan 11 11:36 testShell00.tar
-fgastal-@c1r1s5 ex01 % ls - la
-ls: -: No such file or directory
-ls: la: No such file or directory
-fgastal-@c1r1s5 ex01 % ls -la
-total 56
-drwxr-xr-x   6 fgastal-  2022_lisboa    204 Jan 11 12:58 .
-drwxr-xr-x  10 fgastal-  2022_lisboa    340 Jan 11 16:48 ..
--rw-r--r--@  1 fgastal-  2022_lisboa   6148 Jan 11 12:58 .DS_Store
--rw-------   1 fgastal-  2022_lisboa  12288 Jan 11 11:30 .testShell00.swp
--r--r-xr-x   1 fgastal-  2022_lisboa     40 Jun  1  2022 testShell00
--rw-r--r--   1 fgastal-  2022_lisboa   2048 Jan 11 11:36 testShell00.tar
-fgastal-@c1r1s5 ex01 % git status
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   ../.DS_Store
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	../ex05/
-
-no changes added to commit (use "git add" and/or "git commit -a")
-fgastal-@c1r1s5 ex01 % cd
-fgastal-@c1r1s5 ~ % cd dektop
-cd: no such file or directory: dektop
-fgastal-@c1r1s5 ~ % cd desktp
-cd: no such file or directory: desktp
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ~ % pwd
+/Users/fgastal-
+fgastal-@c1r1s5 ~ % ls
+Applications	Downloads	batman.txt	test.txtt
+Desktop		Library		goinfre		toto
+Documents	Movies		shell		txt2.txt
+fgastal-@c1r1s5 ~ % cd Desktop
+fgastal-@c1r1s5 Desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % ls
+ex00	ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08
 fgastal-@c1r1s5 ExerciciosPiscine % cd ex06
-fgastal-@c1r1s5 ex06 % git status
-On branch master
-nothing to commit, working tree clean
-fgastal-@c1r1s5 ex06 % git status --ignored
-On branch master
-nothing to commit, working tree clean
-fgastal-@c1r1s5 ex06 % cd shell00/ex0
-cd: no such file or directory: shell00/ex0
-fgastal-@c1r1s5 ex06 % cd
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % cd ExerciciosPiscine/ex03
-cd: no such file or directory: ExerciciosPiscine/ex03
-fgastal-@c1r1s5 ExerciciosPiscine % cd ex06
-fgastal-@c1r1s5 ex06 % nano git_ignore.sh
-fgastal-@c1r1s5 ex06 % cat git_ignore.sh
-git status --ignored
-fgastal-@c1r1s5 ex06 % bash git_ignore.sh
-On branch master
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	git_ignore.sh
-
-nothing added to commit but untracked files present (use "git add" to track)
-fgastal-@c1r1s5 ex06 % git status --ignored
-On branch master
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	git_ignore.sh
-
-nothing added to commit but untracked files present (use "git add" to track)
-fgastal-@c1r1s5 ex06 % cd
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % git status --ignored
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-  (commit or discard the untracked or modified content in submodules)
-	modified:   .DS_Store
-	modified:   ex06 (untracked content)
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	ex05/
-
-no changes added to commit (use "git add" and/or "git commit -a")
-fgastal-@c1r1s5 ExerciciosPiscine % git status --ignored | cat -e
-On branch master$
-Changes not staged for commit:$
-  (use "git add <file>..." to update what will be committed)$
-  (use "git restore <file>..." to discard changes in working directory)$
-  (commit or discard the untracked or modified content in submodules)$
-	modified:   .DS_Store$
-GIT-STATUS(1)                                                                                 Git Manual                                                                                 GIT-STATUS(1)
-
-NAME
-       git-status - Show the working tree status
-	modified:   ex06 (untracked content)$
-$
-Untracked files:$
-  (use "git add <file>..." to include in what will be committed)$
-	ex05/$
-$
-no changes added to commit (use "git add" and/or "git commit -a")$
-fgastal-@c1r1s5 ExerciciosPiscine % git -c color.status-false status --ignored
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-  (commit or discard the untracked or modified content in submodules)
-	modified:   .DS_Store
-	modified:   ex06 (untracked content)
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	ex05/
-
-no changes added to commit (use "git add" and/or "git commit -a")
-fgastal-@c1r1s5 ExerciciosPiscine % git status --ignored
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-  (commit or discard the untracked or modified content in submodules)
-	modified:   .DS_Store
-	modified:   ex06 (untracked content)
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	ex05/
-
-no changes added to commit (use "git add" and/or "git commit -a")
-fgastal-@c1r1s5 ExerciciosPiscine % git status --ignored --porcelain
- M ExerciciosPiscine/.DS_Store
- M ExerciciosPiscine/ex06
-?? ExerciciosPiscine/ex05/
-fgastal-@c1r1s5 ExerciciosPiscine % man git-status
-fgastal-@c1r1s5 ExerciciosPiscine %
-fgastal-@c1r1s5 ExerciciosPiscine % git status --ignored -s -u=no
-fatal: Invalid untracked files mode '=no'
-fgastal-@c1r1s5 ExerciciosPiscine % git status --ignored -s -u no
-fgastal-@c1r1s5 ExerciciosPiscine % pwd
-/Users/fgastal-/desktop/ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % git ls-fles --exclude-standard --ignored --other
-git: 'ls-fles' is not a git command. See 'git --help'.
-
-The most similar command is
-	ls-files
-fgastal-@c1r1s5 ExerciciosPiscine % git ls-files --exclude-standard --ignored --other
-fgastal-@c1r1s5 ExerciciosPiscine % git ls-files --exclude-standard --other
-ex05/
-fgastal-@c1r1s5 ExerciciosPiscine % git ls-files --exclude-standard --others
-ex05/
-fgastal-@c1r1s5 ExerciciosPiscine % git ls-files --exclude-standard --ignored
-fgastal-@c1r1s5 ExerciciosPiscine % git ls-files --exclude-standard --ignored --other
-fgastal-@c1r1s5 ExerciciosPiscine % pwd
-/Users/fgastal-/desktop/ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % cd ex06
-fgastal-@c1r1s5 ex06 % ls -l
-total 8
--rw-r--r--  1 fgastal-  2022_lisboa  21 Jan 12 10:37 git_ignore.sh
--rw-r--r--  1 fgastal-  2022_lisboa   0 Jan 11 18:17 pouet
-fgastal-@c1r1s5 ex06 % rm pouet
-fgastal-@c1r1s5 ex06 % ls -l
-total 8
--rw-r--r--  1 fgastal-  2022_lisboa  21 Jan 12 10:37 git_ignore.sh
-fgastal-@c1r1s5 ex06 % cat git_ignore.sh
-git status --ignored
-fgastal-@c1r1s5 ex06 % nano git_ignore.sh
-fgastal-@c1r1s5 ex06 %
-fgastal-@c1r1s5 ex06 % echo 'git ls-files --exclude-standard --ignored --other' > git_ignored.sh
-fgastal-@c1r1s5 ex06 % cat git_ignore
-cat: git_ignore: No such file or directory
-fgastal-@c1r1s5 ex06 % cat git_ignore
-cat: git_ignore: No such file or directory
-fgastal-@c1r1s5 ex06 % cat git_ignore
-cat: git_ignore: No such file or directory
-fgastal-@c1r1s5 ex06 % cat git_ignore
-cat: git_ignore: No such file or directory
-fgastal-@c1r1s5 ex06 % nano git_ignored.sh
-fgastal-@c1r1s5 ex06 % bash git_ignored.sh
-fgastal-@c1r1s5 ex06 % ...
-zsh: command not found: ...
-fgastal-@c1r1s5 ex06 % cd
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % bash ex06/git_ignored.sh
-fgastal-@c1r1s5 ExerciciosPiscine % cd ex06
-fgastal-@c1r1s5 ex06 % ls l
-ls: l: No such file or directory
-fgastal-@c1r1s5 ex06 % ls -l
-total 16
--rw-r--r--  1 fgastal-  2022_lisboa  21 Jan 12 10:37 git_ignore.sh
--rw-r--r--  1 fgastal-  2022_lisboa  50 Jan 12 10:58 git_ignored.sh
-fgastal-@c1r1s5 ex06 % bash git_ignored.sh
-fgastal-@c1r1s5 ex06 % ls -l
-total 16
--rw-r--r--  1 fgastal-  2022_lisboa  21 Jan 12 10:37 git_ignore.sh
--rw-r--r--  1 fgastal-  2022_lisboa  50 Jan 12 10:58 git_ignored.sh
-fgastal-@c1r1s5 ex06 % ls l
-ls: l: No such file or directory
-fgastal-@c1r1s5 ex06 % ls -l
-total 16
--rw-r--r--  1 fgastal-  2022_lisboa  21 Jan 12 10:37 git_ignore.sh
--rw-r--r--  1 fgastal-  2022_lisboa  50 Jan 12 10:58 git_ignored.sh
-fgastal-@c1r1s5 ex06 % rm git_ignore.sh
-fgastal-@c1r1s5 ex06 % ls -l
-total 8
--rw-r--r--  1 fgastal-  2022_lisboa  50 Jan 12 10:58 git_ignored.sh
-fgastal-@c1r1s5 ex06 % bach git_ignored.sh
-zsh: command not found: bach
-fgastal-@c1r1s5 ex06 % bash git_ignored.sh
-
-fgastal-@c1r1s5 ex06 % ls -l
-total 8
--rw-r--r--  1 fgastal-  2022_lisboa  50 Jan 12 10:58 git_ignored.sh
-fgastal-@c1r1s5 ex06 % ls -la
-total 8
-drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 12 11:06 .
-drwxr-xr-x  10 fgastal-  2022_lisboa  340 Jan 11 16:48 ..
-drwxr-xr-x  12 fgastal-  2022_lisboa  408 Jan 12 10:46 .git
--rw-r--r--   1 fgastal-  2022_lisboa   50 Jan 12 10:58 git_ignored.sh
-fgastal-@c1r1s5 ex06 % ...
-zsh: command not found: ...
-fgastal-@c1r1s5 ex06 % cd
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % bash ExerciciosPiscine/ex06
-bash: ExerciciosPiscine/ex06: No such file or directory
-fgastal-@c1r1s5 ExerciciosPiscine % cd
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % bash ExerciciosPiscine/ex06
-ExerciciosPiscine/ex06: ExerciciosPiscine/ex06: is a directory
-fgastal-@c1r1s5 desktop % bash ExerciciosPiscine/06/git_ignored.sh
-bash: ExerciciosPiscine/06/git_ignored.sh: No such file or directory
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % cd ex06
-fgastal-@c1r1s5 ex06 % ls -la
-total 8
-drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 12 11:06 .
-drwxr-xr-x  10 fgastal-  2022_lisboa  340 Jan 11 16:48 ..
-drwxr-xr-x  12 fgastal-  2022_lisboa  408 Jan 12 10:46 .git
--rw-r--r--   1 fgastal-  2022_lisboa   50 Jan 12 10:58 git_ignored.sh
-fgastal-@c1r1s5 ex06 % cd
-fgastal-@c1r1s5 ~ % cd desktop
-fgastal-@c1r1s5 desktop % bash ExerciciosPiscine/ex06/git_ignored.sh
-fgastal-@c1r1s5 desktop % bash ../../ExerciciosPiscine/ex06/git_ignored.sh
-bash: ../../ExerciciosPiscine/ex06/git_ignored.sh: No such file or directory
-fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
-fgastal-@c1r1s5 ExerciciosPiscine % cd ex06
-fgastal-@c1r1s5 ex06 % cat git_ignored.sh
-git ls-files --exclude-standard --ignored --other
+fgastal-@c1r1s5 ex06 % ls
+git_ignored.sh
+fgastal-@c1r1s5 ex06 % vim git_ignored.sh
 fgastal-@c1r1s5 ex06 % bash git_ignored.sh | cat -e
-fgastal-@c1r1s5 ex06 % cat git_ignored.sh
-git ls-files --exclude-standard --ignored --other
+fgastal-@c1r1s5 ex06 % toc
+zsh: command not found: toc
+fgastal-@c1r1s5 ex06 % touch .DS_Store
+fgastal-@c1r1s5 ex06 % touch mywork.c~
+fgastal-@c1r1s5 ex06 % bash git_ignored.sh | cat -e
+fgastal-@c1r1s5 ex06 % touch .gitignore
+fgastal-@c1r1s5 ex06 % vim .gitignore
+fgastal-@c1r1s5 ex06 % bash git_ignored.sh | cat -e
+.DS_Store$
+mywork.c~$
+fgastal-@c1r1s5 ex06 %
