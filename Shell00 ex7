@@ -6,6 +6,11 @@ patch a sw.diff -o b
 ls -l
 cat b
 
+obs: deletar o arquivo a e o sw.diff!!! a entrega eh so do b
+
+
+_
+
 
 Last login: Wed Jan 12 17:45:05 on ttys001
 fgastal-@c1r1s5 ~ % cd desktop
