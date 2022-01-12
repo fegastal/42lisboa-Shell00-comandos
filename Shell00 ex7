@@ -1,6 +1,7 @@
 #Fazer o download dos dois arquivos fornecidos pela escola.
 #Colar na pasta ex07 
 
-diff a b > sw.diffpatch a sw.diff -o b
+diff a b > sw.diff
+patch a sw.diff -o b
 ls -l
 cat b
