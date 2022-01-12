@@ -1,0 +1,6 @@
+#Fazer o download dos dois arquivos fornecidos pela escola.
+#Colar na pasta ex07 
+
+patch a sw.diff -o b
+ls -l
+cat b
