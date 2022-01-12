@@ -97,4 +97,35 @@ fgastal-@c1r1s5 ex04 % ls -l
 total 8
 -rw-r--r--  1 fgastal-  2022_lisboa  8 Jan 11 16:03 midLS
 fgastal-@c1r1s5 ex04 %
+_
+fgastal-@c1r1s5 ~ % cd desktop
+fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % cd ex04
+fgastal-@c1r1s5 ex04 % ls -l
+fgastal-@c1r1s5 ex04 % vim midLS
 
+fgastal-@c1r1s5 ex04 %
+fgastal-@c1r1s5 ex04 % vim -u NONE midLS
+fgastal-@c1r1s5 ex04 % echo "ls -mpUt" > midLS
+fgastal-@c1r1s5 ex04 % ls -l
+total 8
+-rw-r--r--  1 fgastal-  2022_lisboa  9 Jan 12 12:15 midLS
+fgastal-@c1r1s5 ex04 % cat midLS
+ls -mpUt
+fgastal-@c1r1s5 ex04 % bash midLS
+midLS,
+fgastal-@c1r1s5 ex04 % cd
+fgastal-@c1r1s5 ~ % cd desktop
+fgastal-@c1r1s5 desktop % cd ExerciciosPiscine
+fgastal-@c1r1s5 ExerciciosPiscine % ls -l
+total 0
+drwxr-xr-x   3 fgastal-  2022_lisboa  102 Jan 10 16:39 ex00
+drwxr-xr-x   6 fgastal-  2022_lisboa  204 Jan 11 12:58 ex01
+drwxr-xr-x  11 fgastal-  2022_lisboa  374 Jan 11 11:12 ex02
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 11 12:55 ex03
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 12 12:10 ex04
+drwxr-xr-x   5 fgastal-  2022_lisboa  170 Jan 12 12:04 ex05
+drwxr-xr-x   4 fgastal-  2022_lisboa  136 Jan 12 11:06 ex06
+fgastal-@c1r1s5 ExerciciosPiscine % bash ex04/midLS
+ex06/, ex04/, ex05/, ex03/, ex02/, ex01/, ex00/
+fgastal-@c1r1s5 ExerciciosPiscine %
